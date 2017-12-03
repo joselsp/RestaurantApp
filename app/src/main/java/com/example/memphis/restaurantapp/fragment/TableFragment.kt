@@ -84,7 +84,7 @@ class TableFragment : Fragment() {
                 val tableSelected = data?.getSerializableExtra(TableDetailActivity.EXTRA_TABLE) as Table
                 val tableNumber = tableSelected.tableNumber
 
-                Tables.get(tableNumber).dishes = tableSelected.dishes
+                Tables.get(tableNumber-1).dishes = tableSelected.dishes
             }
         }
     }
