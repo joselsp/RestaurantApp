@@ -85,6 +85,7 @@ class TableDetailActivity : AppCompatActivity() {
         return true
     }
 
+    //TODO Add delete confirm dialog
     override fun onOptionsItemSelected(item: MenuItem?) = when (item?.itemId) {
         android.R.id.home -> {
             finish()
