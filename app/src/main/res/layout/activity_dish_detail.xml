@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.memphis.restaurantapp.activity.DishDetailActivity"
+    android:layout_margin="@dimen/default_margin"
+    android:padding="@dimen/default_margin">
+
+    <TextView
+        android:id="@+id/dish_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="Plato 1" />
+
+    <ImageView
+        android:id="@+id/dish_detail_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/table_image_max_width"
+        android:adjustViewBounds="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dish_detail_title"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:contentDescription="@string/table_image_description"
+        app:srcCompat="@drawable/table" />
+
+    <TextView
+        android:id="@+id/allergen_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish_detail_title"
+        android:layout_toEndOf="@+id/dish_detail_image"
+        android:layout_toRightOf="@+id/dish_detail_image"
+        android:maxLines="5"
+        android:lines="4"
+        tools:text="Alergenico 1"/>
+
+    <TextView
+        android:id="@+id/title_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish_detail_image"
+        tools:text="Comentarios: "/>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_comments"
+        tools:text="Comentarios"/>
+
+</RelativeLayout>

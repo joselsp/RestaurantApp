@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RestaurantApp</string>
+    <string name="table_image_description">Imagen del número de mesa</string>
+    <string name="add">Add</string>
+    <string name="ok">ok</string>
+    <string name="delete_order">delete order</string>
+</resources>
